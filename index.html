@@ -5,76 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Autos & Transport</title>
 
+    <!-- cdn link for bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- link for bootstrap icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
        
 </head>
 <body>
+  <!-- homepage of the website -->
     <div class="container-fluid p-0 homePage">
-      <div class="row container-fluid px-3 py-4 m-auto homeHeader">
-        <div class="container d-flex p-2 justify-content-evenly m-auto headerInnerContainer">
-            <div class="d-flex align-items-center col-md-2">
+      <!-- header part of homepage -->
+      <div class="row container-fluid px-5 py-4 m-auto d-md-block d-none homeHeader">
+        <div class="container d-flex flex-md-row flex-column p-2 justify-content-evenly mx-5 headerInnerContainer">
+            <div class="d-flex align-items-center col-md-2 ms-5">
+              <!-- logo -->
                 <img src="./images/airplane_logo.png" alt="airplane" width="15%" />
                 <div class="h4 pl-2 m-2">DENSO</div>
             </div>
-            <div class="d-flex align-items-center contact col-md-3">
+            <!-- contact info -->
+            <div class="d-md-flex d-none align-items-center contact col-md-3">
                 <img src="./images/phone.png" alt="phone icon" />
                 <p class="m-0 ms-2">CALL US: +01 1234567890</p>
             </div>
-            <div class="d-flex align-items-center email col-md-3">
+            <!-- email -->
+            <div class="d-md-flex d-none align-items-center email col-md-3">
                 <img src="./images/email.png" alt="email icon" />
                 <p class="m-0 ms-2">demo@gmail.com</p>
             </div>
-            <div class="d-flex align-items-center col-md-3">
-                <input class="form-control m-2" type="search" placeholder="Search" aria-label="Search">
+            <!-- search button -->
+            <div class="container w-50 d-none d-md-block">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search">
+                <span class="input-group-text"><i class="bi bi-search"></i></span>
+              </div>
             </div>
         </div>  
     </div>
     
-    <nav class="navbar navbar-expand-lg text-white p-0">
-        <div class="container-fluid m-auto p-0 navBarInnerContainer">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link mx-4" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item text-white">
-                <a class="nav-link mx-5" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-4" href="#">Transport</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-4" href="#">News</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-4" href="#">Clients</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-4" href="#">Contact Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-4" href="#">Login</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link mx-4" href="#">Register</a>
-              </li>
-            </ul>
-          </div>
-      </nav>
-
-    <div class="d-flex justify-content-between home">
-      <div class="col-md-1"></div>
-      <div class="homeText col-md-4">
-        <div class="h1 homeHeading">
-          Autos & Transportation
+    <!-- navigation bar of the website -->
+  <div class="container-fluid p-0 navBar row ">
+    <nav class="navbar navbar-expand-lg navbar-light p-0 navBar">
+      <!-- bootstrap navigation bar used -->
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" style="background-color: white;"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav w-100 d-flex" style="justify-content: space-evenly;">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item text-white">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Transport</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">Clients</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Register</a>
+            </li>
+          </ul>
         </div>
-        <div class="homeParagraph">
+      </div>
+    </nav>
+ </div>
+
+ <!-- Second container -->
+    <div class="row home g-0 m-auto">
+      <div class="col-md-1 gx-5 me-3"></div>
+      <!-- left div of second container -->
+      <div class="homeText col-md-4 col-12 w-sm-100 mx-3 pb-4">
+        <div class="h1 homeHeading">
+          AUTOS & TRANSPOTATION
+        </div>
+        <div class="  homeParagraph">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
         </div>
-        <button type="button" class="btn btn-sm border-0 font-weight-bold text-white contactUsButton">CONTACT US</button>
+        <button type="button" class="btn btn-sm border-0 font-weight-bold text-white contactUsButton button">CONTACT US</button>
       </div>
-      <div class="homeForm col-md-4">
+      <!-- right div of second container -->
+      <div class="homeForm col-md-4 py-4 px-5 mx-5">
         <form>
           <p class="lh-0">Professional Services</p>
           <div class="h4">Get your transport quote</div>
@@ -85,16 +110,16 @@
             <input type="text" class="form-control" placeholder="To destination" />
           </div>
           <div class="mb-3">
-            <input type="email" class="form-control" placeholder="email" />
+            <input type="email" class="form-control" placeholder="Email" />
           </div>
           <div class="mb-3">
             <input type="number" class="form-control" placeholder="Contact Number" />
           </div>
-          <button type="button" class="btn btn-sm border-0 font-weight-bold px-1 py-2 getNowButton">GET NOW QUOTE</button>
+          <button type="button" class="btn btn-sm border-0 font-weight-bold px-1 py-2 getNowButton button">GET NOW QUOTE</button>
         </form>
       </div>
-
-      <div class="arrows col-md-2 d-flex flex-column justify-content-center homeArrows">
+      <!-- arrow buttons on homepage -->
+      <div class="arrows col-md-1 d-md-flex d-none flex-md-column justify-content-center homeArrows">
         <div class="rightArrow">
           <img src="./images/home_right_arrow.png" alt="slide right" />
         </div>
@@ -104,113 +129,121 @@
       </div>
     </div>
   </div>
+  <!-- third container(welcome) -->
   <div class="introduction text-center mt-5">
     <div class="h2 text-dark pt-5 lh-1">WELCOME TO DENSO TRANSPORT</div>
     <div class="m-auto rounded underline"></div>
-    <div class="introParagraph text-dark col-md-7 mx-auto mt-4" >
+    <div class="introParagraph text-dark col-md-7 mx-auto mt-4 text-justify" >
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</p>
     </div>
   </div>
 
+  <!-- fourth container(services) -->
   <div class="services text-dark text-center pt-5 mt-5">
     <div class="h2 pt-5">SERVICES</div>
     <div class="rounded underline m-auto"></div>
-    <div class="text-sm-1 servicesPragraph">
+    <div class="text-sm-1 servicesParagraph">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
     </div>
-    <div class="d-flex m-auto align-items-center w-75 justify-content-evenly">
-      <div class="servicesCard w-75 py-5">
-        <div class="servicesImage py-3">
-          <img src="./images/airplane_icon.png" alt="airplane" />
+    <!-- services images -->
+      <div class="container iconSection d-flex flex-md-row flex-column justify-content-between w-75 pt-5 align-items-center">
+      <div class="servicesCard">
+        <div class="servicesImage w-75 m-auto">
+          <img src="./images/airplane_icon.png" alt="airplane" class="w-100" />
         </div>
-        <div class="servicesName">
+        <div class="servicesName py-3">
           <div class="h6">FLY ANYWHERE</div>
         </div>
       </div>
 
-      <div class="servicesCard w-75">
-        <div class="servicesImage py-3">
-          <img src="./images/cargo_ship_icon.png" alt="cargo ship" />
+      <div class="servicesCard">
+        <div class="servicesImage w-75 m-auto">
+          <img src="./images/cargo_ship_icon.png" alt="cargo ship" class="w-100"/>
         </div>
-        <div class="servicesName">
+        <div class="servicesName py-3">
           <div class="h6">CARGO SERVICE</div>
         </div>
       </div>
 
-      <div class="servicesCard w-75">
-        <div class="servicesImage py-3">
-          <img src="./images/delivery_truck_icon.png" alt="delivery truck" />
+      <div class="servicesCard">
+        <div class="servicesImage w-75 m-auto">
+          <img src="./images/delivery_truck_icon.png" alt="delivery truck" class="w-100"/>
         </div>
-        <div class="servicesName">
+        <div class="servicesName py-3">
           <div class="h6">COURIER SERVICES</div>
         </div>
       </div>
 
-      <div class="servicesCard w-75">
-        <div class="servicesImage py-3">
-          <img src="./images/package_icon.png" alt="package" />
+      <div class="servicesCard">
+        <div class="servicesImage w-75 m-auto">
+          <img src="./images/package_icon.png" alt="package" class="w-100"/>
         </div>
-        <div class="servicesName">
+        <div class="servicesName py-3">
           <div class="h6">BOX STORAGE</div>
         </div>
       </div>
 
-      <div class="servicesCard w-75">
-        <div class="servicesImage py-3">
-          <img src="./images/sheild_icon.png" alt="shield" />
+      <div class="servicesCard">
+        <div class="servicesImage w-75 m-auto">
+          <img src="./images/sheild_icon.png" alt="shield" class="w-100"/>
         </div>
-        <div class="servicesName">
+        <div class="servicesName py-3">
           <div class="h6">100% SAFE</div>
         </div>
       </div>
     </div>
-    <button type="button" class="btn btn-sm border-0 font-weight-bold px-5 py-2 text-sm-6 readMoreButton mb-5">READ MORE</button>
+    <button type="button" class="btn btn-sm border-0 font-weight-bold px-5 py-2 text-sm-6 readMoreButton mb-5 button">READ MORE</button>
   </div>
-
-  <div class="d-flex aboutTransport text-dark my-5 p-0  bg-light row">
+<!-- about container containing info on left and image on right -->
+  <div class="d-flex aboutTransport text-dark my-5 p-0 me-0 bg-light row">
     <div class="aboutText col-md-6 ps-5">
       <div class="h2 ps-5 pt-5 lh-1 mb-0">ABOUT TRANSPORT</div>
       <div class="ms-5 mb-5 rounded underline" style="width: 5%;"></div>
       <div class="aboutParagraph text-sm-1 ps-5 my-3">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
       </div>
-      <button type="button" class="btn btn-sm border-0 font-weight-bold ms-5 py-2 px-5 text-sm-6 readMoreButton my-5">READ MORE</button>
+      <button type="button" class="btn btn-sm border-0 font-weight-bold ms-5 py-2 px-5 text-sm-6 readMoreButton my-5 button">READ MORE</button>
     </div>
-    <div class="aboutImage col-md-6"></div>
+    <!-- image -->
+    <div class="aboutImage col-md-6 px-0"></div>
   </div>
-
+<!-- events container containing three cards -->
   <div class="events text-dark d-flex  flex-column align-items-center">
     <div class="h2 pt-5">LATEST NEWS AND EVENTS</div>
     <div class="round underline"></div>
-    <div class="d-flex m-auto my-5 eventCards text-center justify-content-between w-75">
-      <div class="card position-relative" style="width: 20rem;">
+    <div class="d-flex flex-md-row flex-column my-5 text-center justify-content-between w-75">
+
+      <div class="card position-relative  eventCards  " style="width: 20rem;">
         <img src="./images/event_left_image.png" class="card-img-top" alt="...">
-        <div class="date position-absolute" style="top: 10rem; left: 8rem;">
-          <img src="./images/ellipse'.png" alt="">
-          <p class="lh-0" style="line-height: 1px;">01</p> <p>Sep</p>
-        </div>
+        
         <div class="card-body">
+          <div class="date d-md-flex d-none flex-column position-absolute pt-1" style="top: 10rem; left: 8rem;">
+            <p class="mb-0">01</p> <p>Sep</p>
+          </div>
+
           <h5 class="card-title fw-bold py-3" style="font-size: 13px;">LIBERALISATION AND AIR CARGO INDUSTRY</h5>
           <p class="card-text" style="font-size: 12px;">ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.ion ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute</p>
         </div>
       </div>
   
-      <div class="card position-relative" style="width: 20rem;">
+      <div class="card position-relative  eventCards " style="width: 20rem;">
         <img src="./images/event_mid_image.png" class="card-img-top" alt="...">
-        <div class="date position-absolute" style="top: 10rem; left: 8rem;">
-          <img src="./images/ellipse'.png" alt="">
-        </div>
+
         <div class="card-body">
+          <div class="date d-md-flex d-none flex-column position-absolute pt-1" style="top: 10rem; left: 8rem;">
+            <p class="mb-0">02</p> <p>Sep</p>
+          </div>
+
           <h5 class="card-title fw-bold py-3" style="font-size: 13px;">NEW WAREHOUSE NOW OPERATIONAL</h5>
           <p class="card-text" style="font-size: 12px;">ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.ion ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute</p>
         </div>
       </div>
   
-      <div class="card position-relative" style="width: 20rem;">
+      <div class="card position-relative  eventCards " style="width: 20rem;">
         <img src="./images/event_right_image.png" class="card-img-top" alt="...">
-        <div class="date position-absolute" style="top: 10rem; left: 8rem;">
-          <img src="./images/ellipse'.png" alt="">
-          <p>03 Sep</p>
+
+        <div class="date d-md-flex d-none flex-column position-absolute pt-1" style="top: 10rem; left: 8rem;">
+          <p class="mb-0">03</p> <p>Sep</p>
         </div>
         <div class="card-body">
           <h5 class="card-title fw-bold py-3" style="font-size: 13px;">NEW TRUCKS ARRIVING</h5>
@@ -219,15 +252,15 @@
       </div>
 
     </div>
-    <button type="button" class="btn btn-sm border-0 font-weight-bold px-5 py-2 text-sm-6 readMoreButton mb-5">READ MORE</button>
+    <button type="button" class="btn btn-sm border-0 font-weight-bold px-5 py-2 text-sm-6 readMoreButton mb-5 button">READ MORE</button>
   </div>
-
+<!-- testimonial container containing two cards -->
   <div class="testimonial">
     <div class="testimonialInnerContainer text-dark py-5">
       <div class="h2 text-center text-white pt-5">Testimonial</div>
       <div class="rounded underline m-auto mb-3" style="border: 2px solid white;"></div>
-      <div class="d-flex py-5">
-        <div class="leftButton my-5 px-5 py-5">
+      <div class="d-flex flex-md-row flex-column py-5">
+        <div class="leftButton my-5 px-5 py-5 d-md-block d-none">
           <img src="./images/home_left_arrow.png" alt="left" />
         </div>
         <div class="row col-md-8 m-auto">
@@ -259,14 +292,14 @@
           </div>
         </div>
     
-        <div class="rightButton my-5 px-5 py-5">
+        <div class="rightButton my-5 px-5 py-5 d-md-block d-none">
           <img src="./images/right_button.png" alt="right" />
         </div>
       </div>
       
     </div>
   </div>
-
+<!-- feedback form -->
   <div class="callBackFormContainer text-center py-5">
     <div class="h2 text-dark pt-5">REQUEST A CALL BACK</div>
     <div class="underline m-auto"></div>
@@ -283,12 +316,12 @@
         <div class="my-5">
           <input type="text" class="form-control" placeholder="Message" />
         </div>
-        <button type="submit" class="btn rounded-pill w-25 m-auto pt-2 px-3 my-4" style="background-color: #f97218; border: none;">SEND</button>
+        <button type="submit" class="btn rounded-pill text-white w-25 m-auto pt-2 px-3 my-4 button" style="background-color: #f97218; border: none;">SEND</button>
       </form>
   </div>
-  
+  <!-- footer of the website -->
   <div class="footer">
-    <div class="footerContact d-flex justify-content-between bg-dark text-white px-5 pt-3">
+    <div class="footerContact d-flex flex-md-row flex-column justify-content-between bg-dark text-white px-5 pt-3">
       <div class="callNow d-flex my-2 ms-5 w-25">
         <img src="./images/telephone.png" alt="phone"/>
         <p>Call Now: +01 1234567890</p>
@@ -302,8 +335,10 @@
         <p>demo@gmail.com</p>
       </div>
     </div>
-    <div class="footerContent row py-5" style="background-color: #29b371;">
+    <!-- inner footer -->
+    <div class="footerContent row py-5 m-0" style="background-color: #29b371;">
       <div class="col-md-1"></div>
+      <!-- left side of inner footer -->
       <div class="leftFooter col-md-5" style="border-right: 2px solid white;">
         <div class="footerHeading d-flex">
           <img src="./images/airplane (2).png" alt="airplane" style="width: 10%;"/>
@@ -319,6 +354,7 @@
           <img src="./images/instagram-logo.png" alt="instagram" class="me-2"/>
         </div>
       </div>
+      <!-- right side of inner footer -->
       <div class="rightFooter row col-md-5 d-flex justify-content-between py-5 px-5">
         <div class="info col-md-3">
           <div class="h4 " style="font-size: 14px;">Information</div>
@@ -336,9 +372,12 @@
       </div>
       <div class="col-md-1"></div>
     </div>
+    <!-- copyright information -->
     <div class="copyrightInfo bg-dark text-center pt-3">
       <p>&copy; 2019 All Rights Reserved. Free html template</p>
     </div>
   </div>
+<!-- script for adding the sliding effect on navigation bar -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

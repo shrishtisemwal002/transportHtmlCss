@@ -5,6 +5,16 @@
     margin: 0;
     box-sizing: border-box;
 }
+/* common class for all the buttons */
+.button {
+    cursor: pointer;
+    transition: 0.5s ease-in;
+}
+.button:hover {
+    transform: translate(3px,-5px);
+    color: white;
+    font-weight: bold;
+}
 body {
     font-family: 'poppins';
     color: white;
@@ -16,7 +26,7 @@ body {
     background-repeat: no-repeat;
 }
 
-.homeHeader {
+.homeHeader, .contactUsButton, ul li a:hover, .rightArrow img {
     background-color: #29b371;
 }
 
@@ -25,13 +35,9 @@ body {
     font-size: 13px;
     font-weight: 400;
 }
-.navbar, .getNowButton, .leftArrow img, .readMoreButton, .leftButton img{
+.navBar, .getNowButton, .leftArrow img, .readMoreButton, .leftButton img{
     background-color: #222b3c;
     color: white;
-}
-
-.navBarInnerContainer {
-    width: 80%;
 }
 
 ul li a{
@@ -39,16 +45,9 @@ ul li a{
     text-transform: uppercase;
     font-size: 13px;
 }
-.contactUsButton, ul li a:hover, .rightArrow img {
-    background-color:rgb(41, 179, 113);
-} 
 
 .home {
     padding: 7% 0%;
-}
-
-.homeText {
-    width: 32%;
 }
 
 .homeHeading {
@@ -60,9 +59,7 @@ ul li a{
 }
 
 .homeForm {
-    padding: 2% 3%;
     background-color: rgba(41, 179, 113,0.7);
-    width: 30% !important;
 }
 
 .homeForm p{
@@ -79,7 +76,7 @@ ul li a{
 }
 
 .leftArrow img, .rightArrow img {
-    padding: 17%;
+    padding: 30%;
     border-radius: 50%;
 }
 
@@ -101,6 +98,13 @@ ul li a{
     background-image: url('./images/about-bg.png');
     background-repeat: no-repeat;
     background-position: right -52px
+}
+
+.date {
+    background-color: #29b371;
+    height: 4rem;
+    width: 21%;
+    border-radius: 50%;
 }
 .testimonial {
     background-image: url('./images/testimonial_bg.png');
@@ -126,4 +130,51 @@ ul li a{
     border: 1px solid white;
     padding: 2%;
     height: 2rem;
+}
+.servicesCard, .eventCards {
+    transition: 0.5s ease-in;
+}
+.servicesCard:hover, .eventCards:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+/* media queries for mobile phones */
+@media (min-width:360px) and (max-width:767px) {
+
+    .homePage {
+        background-size: cover;
+    }
+    .homeText, .homeForm, .callNow, .mail {
+        margin: 0 !important;
+    }
+    .aboutText {
+        width: 83%;
+        padding: 0% !important;
+        margin: auto;
+    }
+    .card {
+        width: 100% !important;
+        margin-top: 4%;
+    }
+    .callNow {
+        width: 80%;
+    }
+    .introParagraph, .servicesParagraph, .aboutParagraph {
+        text-align: justify;
+        padding: 0% 5%;
+    }
+}
+/* media query for mobile phone and tablet combined */
+@media (min-width:360px) and (max-width:1024px) {
+    .homePage {
+        background-size: cover;
+    }
+
+    .arrows, .date, .homeHeader {
+        display: none !important;
+    }
+
+    .callNow {
+        width: 100% !important;
+    }
 }
